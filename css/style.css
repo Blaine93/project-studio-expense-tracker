@@ -1,0 +1,162 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  background-color: #F1F0F6;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  padding: 100px 15%;
+  height: 100%;
+}
+
+#result-wrapper {
+  width: 30%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #F9FAFC;
+  box-sizing: border-box;
+  padding: 100px 40px;
+  border-left: 1px solid #EEEEEE;
+}
+
+#expense-form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex: 0 0 100%;
+}
+
+#expense-form input {
+  padding: 24px;
+  font-size: 16px;
+  border: 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #333333;
+  box-shadow: 0px 1px 2px 0px #CCCCCC;
+  outline: none;
+}
+
+#expense-form input:hover, #expense-form input:focus {
+  box-shadow: 0px 1px 2px 1px #CCCCCC;
+}
+
+#expense-form button {
+  padding: 24px;
+  font-size: 16px;
+  background-color: #007DFF;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 1px 2px 0px #CCCCCC;
+  cursor: pointer;
+}
+
+#expense-form button:hover {
+  box-shadow: 0px 1px 2px 1px #CCCCCC;
+  opacity: 0.8;
+}
+
+h2, h3 {
+  width: 100%;
+  margin: 0 0 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #AAAAAA;
+  font-weight: 400;
+}
+
+#expenses {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.expense {
+  max-width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 1px 2px 0px #CCCCCC;
+  padding: 24px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expense-name {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.expense-name div {
+  padding: 5px 0;
+  color: #333333;
+  font-size: 20px;
+}
+
+.expense-name small {
+  padding: 5px 0;
+  color: #AAAAAA;
+  font-size: 14px;
+}
+
+.expense-amount {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  justify-content: flex-end;
+  color: #FF504C;
+  font-size: 16px;
+}
+
+#total {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+#expensive, #cheap {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1150px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  #wrapper {
+    padding: 40px;
+    height: auto;
+    width: 100%;
+  }
+
+  #result-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 0;
+  }
+
+  #expense-form {
+    flex-direction: column;
+  }
+}

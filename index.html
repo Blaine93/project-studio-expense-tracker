@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <title>Expense Tracker - Project Studio</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="expense-form">
+        <input type="text" id="name" placeholder="Название" />
+        <input type="number" id="amount" placeholder="Сумма в рублях" />
+        <button type="button" id="add">Добавить</button>
+      </div>
+      <h2>Расходы</h2>
+      <div id="expenses"></div>
+    </div>
+    <div id="result-wrapper">
+      <h3>Всего потрачено:</h3>
+      <div id="total">0 руб.</div>
+      <h3>Самая дорогая покупка:</h3>
+      <div id="expensive">0 руб.</div>
+      <h3>Самая дешёвая покупка:</h3>
+      <div id="cheap">0 руб.</div>
+    </div>
+    <script src="js/expenses.js"></script>
+  </body>
+</html>
